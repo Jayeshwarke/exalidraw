@@ -7,8 +7,66 @@
     width:100vw;
     height:100vh;
     overflow: hidden;
+    position: relative;
 }
 
 #canvas{
-    background-color: yellow;
+    /* border: 2px solid red ;
+    background-color: yellow; */
+    cursor: auto;
+}
+#top{
+
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+#top> .options{
+ background-color: #fff;
+ display: flex;
+ align-items: center;
+ gap:10px;
+ border-radius: 6px;
+ padding: 4px 20px;
+box-shadow:2px 2px 6px #ededed ;
+}
+.menu{
+    background-color: #ECECF4;
+    border-radius: 4px;
+}
+#top btn{
+    background-color:transparent;
+    border: none;
+    padding: 4px 6px ;
+    border-radius: 4px;
+    
+    cursor: pointer;
+}
+#top btn:hover, .active{
+    background-color: #6d6de6;
+    border-radius: 4px;
+}
+.active{
+    background-color: #2a2ae9;
+    color: white;
+}
+
+#bottom {
+  position: absolute;
+  z-index: 100;
+  
+  
+}
+
+#bottom > .options >{
+  background-color: #d2d2f0;
+  padding: 4px 10px;
+  border-radius:5px;
 }
